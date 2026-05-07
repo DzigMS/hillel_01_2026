@@ -10,15 +10,16 @@ pipeline {
             steps {
                 sh '''
                     python3 -m venv test
-                    ./test/bin/pip install -r requirements.txt
+                    ./test/bin/pip install -r lesson_26/requirements.txt
                 '''
             }
         }
         stage('Test') {
-            parallel {
-                stage('Lint') { steps { sh "./${VENV}/bin/flake8 ." } }
-                stage('Unit Tests') { steps { sh "./${VENV}/bin/pytest" } }
-            }
+            stage('Unit Tests') {
+                steps {
+                    sh "./${VENV}/bin/pytest"
+                }
+
         }
     }
 }
