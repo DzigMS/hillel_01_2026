@@ -15,10 +15,8 @@ pipeline {
             }
         }
         stage('Test') {
-            stage('Unit Tests') {
-                steps {
-                    sh "./${VENV}/bin/pytest"
-                }
+            steps {
+                sh "./${VENV}/bin/pytest"
             }
         }
     }
