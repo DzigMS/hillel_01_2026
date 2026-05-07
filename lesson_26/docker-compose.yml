@@ -1,0 +1,15 @@
+
+services:
+  db:
+    image: postgres:16-bookworm
+    environment:
+        POSTGRES_DB: "hillel"
+        POSTGRES_PASSWORD: "mysecret"
+    ports:
+      - "5435:5432"
+
+  tests:
+#    build: .
+    image: tests
+    depends_on:
+      - db
