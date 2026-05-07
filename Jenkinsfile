@@ -5,7 +5,7 @@ pipeline {
             steps {
                 git "https://github.com/DzigMS/hillel_01_2026.git"
             }
-         }
+        }
         stage('Setup') {
             steps {
                 sh '''
@@ -19,7 +19,7 @@ pipeline {
                 steps {
                     sh "./${VENV}/bin/pytest"
                 }
-
+            }
         }
     }
 }
