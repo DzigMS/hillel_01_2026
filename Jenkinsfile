@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                checkout 'https://github.com/DzigMS/hillel_01_2026.git'
+                git "https://github.com/DzigMS/hillel_01_2026.git"
             }
          }
         stage('Setup') {
