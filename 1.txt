@@ -1,3 +1,7 @@
 First one
 Added new text
 Another one line
+
+{'userID': '54013b66-d17a-43f2-b60a-7379c3cd58e6', 'username': 'pes_patron', 'books': []}
+
+{'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InBlc19wYXRyb24iLCJwYXNzd29yZCI6IlBlc19wYXRyb24xISIsImlhdCI6MTc3Mzk0Njk2N30.a5cwNnEX7dDN8oSfhJHOu5jmiDLGladOOuXZhkAoj-Q', 'expires': '2026-03-26T19:02:47.245Z', 'status': 'Success', 'result': 'User authorized successfully.'}

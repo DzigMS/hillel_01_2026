@@ -1,0 +1,10 @@
+
+services:
+
+  tests:
+#    build: .
+    image: report
+    volumes:
+      - "C:\\Users\\DzMS\\PycharmProjects\\hillel_01_2026\\lesson_23\\report:/allure/report/"
+    ports:
+      - "4447:4447"
